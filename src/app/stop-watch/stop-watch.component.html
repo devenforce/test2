@@ -1,0 +1,14 @@
+<div class="stopwatch">
+  <div class="stopwatch-header">
+    <h2>Секундомер</h2>
+  </div>
+  <div class="stopwatch-inner">
+    <div class="timestamp">{{displayTime}}</div>
+    <div class="controls">
+      <button class="start" *ngIf="!started" (click)="start()">Start</button>
+      <button class="stop" *ngIf="started" (click)="stop()">Stop</button>
+      <button class="wait" (dblclick)="wait()">Wait</button>
+      <button class="reset" (click)="reset()">Reset</button>
+    </div>
+  </div>
+</div>
